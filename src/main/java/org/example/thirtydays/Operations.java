@@ -1,12 +1,6 @@
-package org.example;
+package org.example.thirtydays;
 
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
 
 class Result {
 
@@ -22,12 +16,11 @@ class Result {
     public static void solve(double meal_cost, int tip_percent, int tax_percent) {
         // Write your code here
 
-
     }
 
 }
 
-public class ThreeSolution {
+public class Operations {
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -42,4 +35,5 @@ public class ThreeSolution {
         bufferedReader.close();
     }
 }
+
 
