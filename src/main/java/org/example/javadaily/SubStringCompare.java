@@ -2,6 +2,7 @@ package org.example.javadaily;
 
 import java.util.Scanner;
 
+// INCOMPLETE!!!
 public class SubStringCompare {
     public static String getSmallestAndLargest(String s, int k) {
         String smallest = "";

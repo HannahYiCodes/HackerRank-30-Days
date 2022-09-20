@@ -3,21 +3,19 @@ package org.example.thirtydays;
 import java.util.*;
 
 public class DataType1 {
+        public static void main (String[]args){
+            Scanner sc = new Scanner(System.in);
+            int i = sc.nextInt();
+            double d = sc.nextDouble();
+            String s = "HackerRank";
 
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        double mealCost = scan.nextDouble(); // original meal price
-        int tipPercent = scan.nextInt(); // tip percentage
-        int taxPercent = scan.nextInt(); // tax percentage
-        scan.close();
+            int i_2 = sc.nextInt();
+            double d_2 = sc.nextDouble();
+            sc.nextLine();
+            String s_2 = sc.nextLine();
 
-        // Calculate Tax and Tip:
-        double tip = mealCost * tipPercent / 100;
-        double tax = mealCost * taxPercent / 100;
-
-        // cast the result of the rounding operation to an int and save it as totalCost
-        int totalCost = (int) Math.round(mealCost + tax + tip);
-
-        System.out.println("The total meal cost is " + totalCost + " dollars.");
+            System.out.println( i + i_2);
+            System.out.println(d + d_2);
+            System.out.println(s + s_2);
     }
 }
