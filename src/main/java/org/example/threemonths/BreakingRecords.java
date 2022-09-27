@@ -18,10 +18,6 @@ class BreakingRecords {
         array.add(0);
         array.add(0);
 
-        if (scores.size() == 1) {
-            return array;
-        }
-
         int minScore = scores.get(0);
         int maxScore = scores.get(0);
         int minRecord = 0;
