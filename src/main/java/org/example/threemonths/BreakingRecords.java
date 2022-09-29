@@ -15,7 +15,7 @@ class BreakingRecords {
     public static List<Integer> breakingRecords(List<Integer> scores) {
         // Write your code here
         List<Integer> array = new ArrayList<Integer>();
-        array.add(0);
+        array.add(0); // must add a value to compare or else it is just "comparing" to null
         array.add(0);
 
         int minScore = scores.get(0);
@@ -33,10 +33,8 @@ class BreakingRecords {
                 minRecord++;
             }
         }
-
         array.set(0, maxRecord);
         array.set(1, minRecord);
         return array;
     }
-
 }
