@@ -2,6 +2,7 @@ package org.example.notesthirtydays;
 
 import java.util.Scanner;
 
+// 1
 public class HelloWorld {
     public static void main(String[] args) {
         // This syntax creates a scanner object to read the input from stdin.

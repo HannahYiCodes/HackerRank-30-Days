@@ -2,6 +2,7 @@ package org.example.notesthirtydays;
 
 import java.util.Scanner;
 
+// 2
 public class DataTypes {
     public static void main(String[] args) {
         int i = 4;
