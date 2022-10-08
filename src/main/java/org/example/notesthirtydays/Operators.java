@@ -1,6 +1,5 @@
 package org.example.notesthirtydays;
 
-// 3
 class Operators {
 
     /*
