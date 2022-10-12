@@ -2,10 +2,24 @@ package org.example.notesthirtydays;
 
 public class ClassInstance {
 
-        class Person(int initialAge) {
+        class Person {
 
-            int age = initialAge < 0 ? 0 : initialAge;
-        }
+            int age;
+            int initialAge;
+
+//            Person() {
+//                this.age = 0;
+//                this.initialAge = 0;
+//            }
+
+            Person(int initialAge){
+                this.age = age;
+                this.initialAge = initialAge;
+            }
+
+            int getInitialAge(){
+                return initialAge;
+            }
 
         public static void amIOld() {
             String ageStatement;
