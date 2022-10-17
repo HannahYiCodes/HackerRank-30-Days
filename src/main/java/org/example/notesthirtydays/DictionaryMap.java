@@ -6,27 +6,29 @@ import java.util.Scanner;
 
 public class DictionaryMap {
     public static void main(String []argh){
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        Map<String,Integer> nPhone = new HashMap<String,Integer>();
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        // Write code here
+        Map<String,Integer> myMap = new HashMap<String,Integer>();
 
         for(int i = 0; i < n; i++){
-            String name = in.next();
-            int phone = in.nextInt();
-            nPhone.put(name, phone);// Write code here
-        }
-        while(in.hasNext()){
-            String s = in.next();
+            String name = scan.next();
+            int phone = scan.nextInt();
             // Write code here
-            if(nPhone.get(s)==null)
+            myMap.put(name, phone);
+        }
+        while(scan.hasNext()){
+            String s = scan.next();
+            // Write code here
+            if(myMap.get(s)==null)
             {
                 System.out.println("Not found");
             }
             else
             {
-                System.out.println(s+"="+nPhone.get(s));
+                System.out.println(s+"="+myMap.get(s));
             }
         }
-        in.close();
+        scan.close();
     }
 }
