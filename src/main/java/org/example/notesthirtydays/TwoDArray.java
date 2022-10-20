@@ -55,7 +55,6 @@ public class TwoDArray {
             }
         }
         System.out.println(maxSum);
-
         bufferedReader.close();
     }
 }
