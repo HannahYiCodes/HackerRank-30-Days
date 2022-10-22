@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class Scope {
     static class Difference {
-
         private int[] _elements;
         public int maximumDifference;
 
