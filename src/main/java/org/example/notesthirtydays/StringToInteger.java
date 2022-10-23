@@ -18,5 +18,11 @@ public class StringToInteger {
         String S = bufferedReader.readLine();
 
         bufferedReader.close();
+        try {
+            Integer integerValue = Integer.parseInt(S);
+            System.out.println(integerValue);
+        } catch(NumberFormatException exception) {
+            System.out.println("Bad String");
+        }
     }
 }
