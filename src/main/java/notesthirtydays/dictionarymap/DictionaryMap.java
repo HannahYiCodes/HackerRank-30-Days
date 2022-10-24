@@ -1,4 +1,4 @@
-package org.example.notesthirtydays;
+package notesthirtydays.dictionarymap;
 
 import java.util.HashMap;
 import java.util.Map;

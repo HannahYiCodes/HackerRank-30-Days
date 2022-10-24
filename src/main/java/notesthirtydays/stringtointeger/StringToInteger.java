@@ -1,4 +1,4 @@
-package org.example.notesthirtydays;
+package notesthirtydays.stringtointeger;
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -18,6 +18,7 @@ public class StringToInteger {
         String S = bufferedReader.readLine();
 
         bufferedReader.close();
+
         try {
             Integer integerValue = Integer.parseInt(S);
             System.out.println(integerValue);

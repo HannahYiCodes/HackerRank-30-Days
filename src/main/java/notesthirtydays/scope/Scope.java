@@ -1,4 +1,4 @@
-package org.example.notesthirtydays;
+package notesthirtydays.scope;
 import java.util.Scanner;
 
 public class Scope {

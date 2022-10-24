@@ -1,4 +1,4 @@
-package org.example.notesthirtydays;
+package notesthirtydays.recursion3;
 
 import javax.xml.transform.Result;
 import java.awt.print.Book;

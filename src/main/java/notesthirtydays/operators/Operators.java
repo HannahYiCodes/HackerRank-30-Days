@@ -1,4 +1,4 @@
-package org.example.notesthirtydays;
+package notesthirtydays.operators;
 
 // 3
 class Operators {

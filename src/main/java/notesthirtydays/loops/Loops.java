@@ -1,4 +1,4 @@
-package org.example.notesthirtydays;
+package notesthirtydays.loops;
 
 import java.io.BufferedReader;
 import java.io.IOException;

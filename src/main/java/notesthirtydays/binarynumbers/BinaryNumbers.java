@@ -1,4 +1,4 @@
-package org.example.notesthirtydays;
+package notesthirtydays.binarynumbers;
 
 import java.io.BufferedReader;
 import java.io.IOException;

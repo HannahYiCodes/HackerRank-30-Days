@@ -1,4 +1,4 @@
-package org.example.notesthirtydays;
+package notesthirtydays.review;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package org.example.notesthirtydays;
+package notesthirtydays.datatypes;
 
 import java.util.Scanner;
 

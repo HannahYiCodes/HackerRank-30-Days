@@ -1,4 +1,4 @@
-package org.example.notesthirtydays;
+package notesthirtydays.abstractclasses;
 import java.util .*;
 
 public class AbstractClasses {
