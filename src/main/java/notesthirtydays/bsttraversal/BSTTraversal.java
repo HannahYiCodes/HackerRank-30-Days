@@ -47,4 +47,46 @@ public class BSTTraversal {
             levelOrder(root);
         }
     }
+
+//    static void levelOrder(Node root){
+//        //Write your code here
+//
+//        if(root == null){
+//
+//
+//            System.out.println(root);
+//        }
+//
+//        Queue<Node> qu = new LinkedList<Node>();
+//        qu.add(root);
+//        while(!qu.isEmpty()){
+//            int size = qu.size();
+//            List<Integer> currentLevel = new ArrayList<>();
+//
+//            for(int i = 0; i< size; i++){
+//                Node current = qu.remove();
+//
+//                currentLevel.add(current.data);
+//                if(current.left != null){
+//                    qu.add(current.left);
+//                }
+//                if(current.right != null){
+//                    qu.add(current.right);
+//                }
+//
+//                System.out.print(current.data+" ");
+//
+//
+//
+//            }
+//
+//
+//
+//        }
+//
+//
+//
+//
+//
+//    }
 }
