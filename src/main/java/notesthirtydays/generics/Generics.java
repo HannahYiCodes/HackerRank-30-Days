@@ -11,6 +11,11 @@ public class Generics {
          **/
 
         // Write your code here
+        public static <E> void printArray(E[] generic){
+            for(E element : generic) {
+                System.out.println(element);
+            }
+        }
 
     }
 
