@@ -2,42 +2,31 @@ package notesthirtydays.classinstance;
 
 public class ClassInstance {
 
-    class Person {
+    public class Person {
+        private int age;
 
-        int age;
-        int initialAge;
-
-//            Person() {
-//                this.age = 0;
-//                this.initialAge = 0;
-//            }
-
-        Person(int initialAge) {
-            this.age = age;
-            this.initialAge = initialAge;
+        public Person(int initialAge) {
+            // Add some more code to run some checks on initialAge
+            this.age = initialAge;
+            if (age < 0) {
+                this.age = 0;
+                System.out.println("Age is not valid, setting age to 0.");
+            }
         }
 
-//            int getInitialAge(){
-//                return initialAge;
-//            }
-//
-//        public static void amIOld() {
-//            String ageStatement;
-//
-//            if(age >= 18) {
-//                ageStatement = "You are old.";
-//            } else if (age >= 13 && < 18) {
-//                ageStatement = "You are a teenager.";
-//            } else if (age > 0 && age <= 12) {
-//                ageStatement = "You are young.";
-//            } else {
-//                ageStatement = "Age is not valid, setting age to 0.\nYou are young.";
-//            }
-//            System.out.println(ageStatement);
-//        }
-//
-//        public static void yearPasses() {
-//            age++;
-//        }
-    }
+        public void amIOld() {
+            // Write code determining if this person's age is old and print the correct statement:
+            if (this.age < 13) {
+                System.out.println("You are young.");
+            } else if (this.age >= 13 && this.age < 18) {
+                System.out.println("You are a teenager.");
+            } else {
+                System.out.println("You are old.");
+            }
+        }
+
+        public void yearPasses() {
+            // Increment this person's age.
+            this.age++;
+        }
 }
