@@ -52,7 +52,7 @@ public class AbstractClasses {
 // End class
 
     public class Solution {
-        public static void main(String[] args) {
+        public void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String title = scanner.nextLine();
         String author = scanner.nextLine();
