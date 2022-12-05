@@ -11,9 +11,25 @@ class Node {
     }
 }
 
-public class LinkedList {
-    public static Node insert(Node head,int data) {
+class Solution {
+
+    public static  Node insert(Node head,int data) {
         //Complete this method
+        Node n = new Node(data);
+        if(head == null) {
+            head = n;
+        }
+        else{
+            Node c = traverse(head);
+            c.next = n;
+        }
+        return head;
+    }
+    private static Node traverse(Node node) {
+        if(node.next == null) {
+            return node;
+        }
+        return traverse(node.next);
     }
 
     public static void display(Node head) {
