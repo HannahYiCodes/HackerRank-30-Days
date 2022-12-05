@@ -41,9 +41,49 @@ class Student extends Person{
      *   @return A character denoting the grade.
      */
     // Write your method here
+    public Student(String firstName,String lastName, int idNumber,int[] testScores){
+        super(firstName, lastName, idNumber); //reusing parent constructor
+        this.testScores=testScores;
+    }
+
+    public   char calculate(){
+        int sum  = 0;
+        for(int i = 0; i < testScores.length; i++){
+            sum += testScores[i];
+        }
+        int avg = sum/testScores.length;
+
+        if(avg <= 100 && avg >= 90){
+            return 'O';
+        }
+
+        else if(avg < 90 && avg >= 80){
+            return 'E';
+        }
+
+        else if(avg < 80 && avg >= 70){
+            return 'A';
+        }
+
+        else if(avg >= 55 && avg < 70){
+            return 'P';
+        }
+
+        else if(avg >= 40 && avg < 55){
+            return 'D';
+        }
+
+        else if(avg < 40 && avg >= 0){
+            return 'T';
+        }
+
+        else {
+            return Character.MIN_VALUE;
+        }
+    }
 }
 
-public class Solution {
+class Solution {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String firstName = scan.next();

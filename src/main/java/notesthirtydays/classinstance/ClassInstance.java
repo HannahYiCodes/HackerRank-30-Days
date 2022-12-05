@@ -29,4 +29,5 @@ public class ClassInstance {
             // Increment this person's age.
             this.age++;
         }
+    }
 }
