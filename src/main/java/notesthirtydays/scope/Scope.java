@@ -7,19 +7,19 @@ public class Scope {
         public int maximumDifference;
 
         // Add your code here
-        public Difference(int[] a){
+        public Difference(int[] a) {
             this.elements = a;
             maximumDifference = 0;
         }
 
-        public void computeDifference(){
+        public void computeDifference() {
             int minNumber = elements[0];
             int maxNumber = elements[0];
-            for(int x = 0; x < elements.length; x++){
+            for (int x = 0; x < elements.length; x++) {
                 maxNumber = (elements[x] > maxNumber) ? elements[x] : maxNumber;
                 minNumber = (elements[x] < minNumber) ? elements[x] : minNumber;
             }
-            maximumDifference = maxNumber-minNumber;
+            maximumDifference = maxNumber - minNumber;
         }
 
     } // End of Difference class
@@ -42,3 +42,4 @@ public class Scope {
             System.out.print(difference.maximumDifference);
         }
     }
+}
