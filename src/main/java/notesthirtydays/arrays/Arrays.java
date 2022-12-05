@@ -29,3 +29,19 @@ public class Arrays {
         bufferedReader.close();
     }
 }
+
+public class Solution {
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+
+        int n = Integer.parseInt(bufferedReader.readLine().trim());
+
+        List<Integer> arr = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+                .map(Integer::parseInt)
+                .collect(toList());
+        for(int i=0;i<n;i++) {
+            System.out.printf("%s " ,arr.get(n-1-i));
+        }
+        bufferedReader.close();
+    }
+}

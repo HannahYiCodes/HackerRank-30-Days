@@ -1,15 +1,8 @@
 package notesthirtydays.twodarray;
 
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
 import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 
@@ -32,14 +25,6 @@ public class TwoDArray {
             }
         });
 
-        //  {
-        // {1,2,3,4,5},
-        // {1,2,3,4,5},
-        // {1,2,3,4,5},
-        // {1,2,3,4,5},
-        // {1,2,3,4,5},
-        // {1,2,3,4,5},
-        // }
         int a,b,c,d,e,f,g;
         int maxSum=-100;
         int sum;
