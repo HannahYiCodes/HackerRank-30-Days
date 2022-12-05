@@ -2,41 +2,43 @@ package notesthirtydays.scope;
 import java.util.Scanner;
 
 public class Scope {
-    static class Difference {
-        private int[] _elements;
+    class Difference {
+        private int[] elements;
         public int maximumDifference;
 
-        Difference(int[] _elements) {
-            this._elements = _elements;
+        // Add your code here
+        public Difference(int[] a){
+            this.elements = a;
+            maximumDifference = 0;
         }
 
-        public void computeDifference() {
-            for (int index1 = 0; index1 < _elements.length; index1++) {
-                for (int index2 = index1 + 1; index2 < _elements.length; index2++) {
-                    int absoluteValue = Math.abs(_elements[index1] - _elements[index2]);
-                    if (maximumDifference < absoluteValue) {
-                        maximumDifference = absoluteValue;
-                    }
-                }
+        public void computeDifference(){
+            int minNumber = elements[0];
+            int maxNumber = elements[0];
+            for(int x = 0; x < elements.length; x++){
+                maxNumber = (elements[x] > maxNumber) ? elements[x] : maxNumber;
+                minNumber = (elements[x] < minNumber) ? elements[x] : minNumber;
             }
-            System.out.println(maximumDifference);
+            maximumDifference = maxNumber-minNumber;
         }
 
-    }
+    } // End of Difference class
 
     public class Solution {
 
-        public static void main(String[] args) {
-            /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-            Scanner scanner = new Scanner(System.in);
-            int N = scanner.nextInt();
-            scanner.nextLine();
-            int[] _elements = new int[N];
-            for(int index = 0; index < _elements.length; index++) {
-                _elements[index] = scanner.nextInt();
+        public void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            int n = sc.nextInt();
+            int[] a = new int[n];
+            for (int i = 0; i < n; i++) {
+                a[i] = sc.nextInt();
             }
-            Difference difference = new Difference(_elements);
+            sc.close();
+
+            Difference difference = new Difference(a);
+
             difference.computeDifference();
+
+            System.out.print(difference.maximumDifference);
         }
     }
-}
