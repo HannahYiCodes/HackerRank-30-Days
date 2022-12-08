@@ -53,3 +53,21 @@ class Solution {
         sc.close();
     }
 }
+
+//    public static  Node insert(Node head,int data) {
+//        //Complete this method
+//        if (head == null) {
+//            return new Node(data);
+//        }
+//        if( head.next == null){
+//            head.next = new Node(data);
+//        } else {
+//            Node tmp = head;
+//            while (tmp.next != null) {
+//                tmp = tmp.next;
+//            }
+//            tmp.next = new Node(data);
+//        }
+//
+//        return head;
+//    }
