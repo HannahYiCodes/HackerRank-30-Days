@@ -54,6 +54,7 @@ class Solution {
     }
 }
 
+// ALSO CORRECT
 //    public static  Node insert(Node head,int data) {
 //        //Complete this method
 //        if (head == null) {
