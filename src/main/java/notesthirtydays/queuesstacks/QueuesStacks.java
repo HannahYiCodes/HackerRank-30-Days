@@ -39,3 +39,26 @@ public class QueuesStacks {
         }
     }
 }
+
+// ANOTHER SOLUTION
+//    StringBuilder stackVar =  new StringBuilder();
+//    int stackHead = -1;
+//    StringBuilder queueVar = new StringBuilder();
+//    int queueHead = 0;
+//
+//    void pushCharacter(char c){
+//        stackHead++;
+//        stackVar.append(c);
+//    }
+//
+//    void enqueueCharacter(char c){
+//        queueVar.append(c);
+//    }
+//
+//    char popCharacter(){
+//        return stackVar.charAt(stackHead--);
+//    }
+//
+//    char dequeueCharacter(){
+//        return queueVar.charAt(queueHead++);
+//    }
