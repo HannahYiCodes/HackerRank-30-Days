@@ -62,3 +62,5 @@ public class QueuesStacks {
 //    char dequeueCharacter(){
 //        return queueVar.charAt(queueHead++);
 //    }
+
+// have to push code even though i am sick
