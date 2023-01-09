@@ -44,3 +44,24 @@ public class StringToInteger {
 //        bufferedReader.close();
 //    }
 //}
+
+// THIRD SOLUTION
+//public class Solution {
+//    public static void main(String[] args) throws IOException {
+//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+//
+//        String S = bufferedReader.readLine();
+//
+//        bufferedReader.close();
+//
+//        try{
+//            // write exception-throwing code here
+//            int convertInteger = Integer.parseInt(S);
+//            System.out.println(convertInteger);
+//        }catch(Exception e){
+//            // write exception handling logic here
+//            System.out.println("Bad String");
+//
+//        }
+//    }
+//}
